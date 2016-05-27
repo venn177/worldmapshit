@@ -13,11 +13,6 @@ map.fitBounds(bounds);
 
 // Loading the CSS for the child pages of the iframe without having to embed it into the child page itself
 
-var cssLink = document.createElement("link")
-cssLink.href = "https://dl.dropboxusercontent.com/u/5617656/Atlium%20Compendium/Map-Related/leaflet-map/substyle.css";
-cssLink.rel = "stylesheet";
-cssLink.type = "text/css";
-document.getElementById('modal-content').contentDocument.appendChild(cssLink);
 
 //MARKERS ARE GOING HERE
 
@@ -28,5 +23,13 @@ var brightfall = L.circle([2217,2690], 40, {
 
 function onClick(brightfall) {
   document.getElementById('modal-content').src = 'brightfall.html';
+  modalLoad();
+}
+
+
+
+// Other shit go hurr
+
+function modalLoad() {
   $("#myModal").modal();
 }

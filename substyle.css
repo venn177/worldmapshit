@@ -1,3 +1,18 @@
-a {
-  display: none;
+/* THIS IS FOR THE META TABLE */
+
+table > .title, .population, .affiliation, .location {
+  font-weight: bold;
+}
+
+table > .title {
+  text-align: center;
+}
+
+#meta {
+  float: right;
+  width: 30%;
+  border: solid 1px #463621;
+  margin: 15px 3px 3px 15px;
+  text-align: left;
+  background-color: rgba(0,0,0,0.07);
 }
