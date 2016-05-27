@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.leaflet-bottom {
+  display: none!important;
+}
+
+.modal-dialog, .modal-content {
+  width: 940px;
+}
